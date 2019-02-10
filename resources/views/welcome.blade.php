@@ -27,16 +27,23 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">ГЛАВНАЯ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">О НАС</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>    
+                    <a class="nav-link" href="#">УСЛУГИ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ГАЛЕРЕЯ</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">КОНТАКТЫ</a>
+                  </li>  
                 </ul>
             </div>
+            <div class="contacts">тел.+380984884442, +380994884442  email:nikszakaz@gmail.com</div>
             </div>  
         </nav>
             @if (Route::has('login'))
@@ -53,41 +60,17 @@
                 </div>
             @endif
 
-        <!-- <div class="row no-gutters">
-            <div class="row">
-                <div class="col">
-                    <div class="parallax"></div>
-                    <div id="rectangle" style="position: absolute; top: 10%; left:45%"></div>
-                    <div class="row">
-                        <div class="col-6"> lorem*98 Инженерный центр Экипаж  является  представителем одного из сам Инженерный центр Экипаж  является  представителем одного из самИнженерный центр Экипаж  является  представителем одного из сам</div>
-                        <div class="col-6"><img src="img\D.jpg" width="100%" alt=""></div>
-                    </div>
-                   
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                  <div class="row">
-                        <div class="col-6">Инженерный центр Экипаж  является  представителем одного из сам Инженерный центр Экипаж  является  представителем одного из самИнженерный центр Экипаж  является  представителем одного из сам</div>
-                        <div class="col-6"><img src="img\D.jpg" width="100%" alt=""></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">Инженерный центр Экипаж  является  представителем одного из сам Инженерный центр Экипаж  является  представителем одного из самИнженерный центр Экипаж  является  представителем одного из сам</div>
-                        <div class="col-6"><img src="img\D.jpg" width="100%" alt=""></div>
-                    </div>  
-                </div>
-            </div>
-        </div> -->
-        <!-- style="position: absolute; top: 10%; left:45%" -->
     <div class="container">
         <div class="bgimg-1">
             <div class="row">
               <div class="col-3 caption-1">
                 <div  class="rectangle" ></div>
-
-                <span class="border-1">NIKS</span><br>
-                <span class="border-2">вікна та двері</span>
               </div>
+            </div>
+            <div class="row">
+                 <div class="col-6 logo2">
+                    <img src="img/logo2.png" alt="logo">
+                 </div>
             </div>
         </div>
         <div class="row">
@@ -124,31 +107,71 @@
                 <h3>КАК МЫ РАБОТАЕМ</h3>
             </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-12 col-lg-3"><div class="circle selection"></div></div>
-                <div class="col-12 col-lg-3"><div class="circle"></div></div>
-                <div class="col-12 col-lg-3"><div class="circle"></div></div>
-                <div class="col-12 col-lg-3"><div class="circle"></div></div>
+            <div class="row no-gutters job2">
+                <div class="col-12 col-lg-3 circle">
+                    
+                        <div class="selection"></div>
+                        <h5>Подбор окон</h5>
+                    
+                </div>
+                <div class="col-12 col-lg-3 circle">
+                   <!--  <div class="circle"> -->
+                        <div class="froze"></div>
+                        <h5>Замер</h5>
+                    <!-- </div> -->
+                </div>
+                <div class="col-12 col-lg-3 circle">
+                    <!-- <div class="circle"> -->
+                        <div class="production"></div>
+                        <h5>Производство</h5>
+                    <!-- </div> -->
+                </div>
+                <div class="col-12 col-lg-3 circle">
+                    <!-- <div class="circle"> -->
+                        <div class="installation"></div>
+                        <h5>Монтаж</h5>
+                    <!-- </div> -->
+                </div>
             </div>
         </div>
-
+        <div class="examples" style="position:relative;">
+            <div class="row no-gutters">
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery1.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery2.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery3.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery4.jpg" alt=""></div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery5.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery3.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery2.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery1.jpg" alt=""></div>
+            </div>
+        </div>
         <div class="bgimg-3">
-          <div class="caption">
-          <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+          <div class="row">
+            <div class="col-3 caption-1" style="top:10%">
+                <div  class="rectangle"  ></div>
+            </div>
+          </div>
+          <div class="row">  
+              <div class="col-6 col-lg-6 caption">
+             
+              <span class="border-2">У Вас остались вопросы? Оставьте заявку и мы перезвоним!</span><br>
+              <button class="contact"><a href="">связаться с нами</a></button><br>
+              <span class="border-3">Наши контакты: тел.+380984884442, +380994884442  email:nikszakaz@gmail.com</span>
+              </div>
           </div>
         </div>
+        <div class="footer"></div>
 
-        <div style="position:relative;">
-          <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-          <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
-          </div>
-        </div>
+       
 
-        <div class="bgimg-1">
+        <!-- <div class="bgimg-1">
           <div class="caption">
           <span class="border">COOL!</span>
           </div>
-        </div>
+        </div> -->
     </div>
 
 </body>

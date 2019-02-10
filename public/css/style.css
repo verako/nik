@@ -6,6 +6,12 @@ body,html{
     font: 400 15px/1.8 "Lato", sans-serif;
     color: #777;
 }
+nav{
+	color: white;
+}
+.contacts{
+	font-size: 12px;
+}
 .container{
 	padding: 0;
 }
@@ -28,14 +34,14 @@ a:hover{
 .rectangle {
 	width: 100%;
 	height: 5px;
-	background: #E17E27;
+	background: #F39200;
 	position: absolute;
 	
 }
 #rectangle-left{
 	width: 15%;
 	height: 5px;
-	background: #E17E27;
+	background: #F39200;
 	margin-top: 10px;
 }
 .caption {
@@ -49,7 +55,7 @@ a:hover{
 
 .caption-1 {
     position: absolute;
-    left: 38%;
+    left: 36.5%;
     top: 30%;
     width: 100%;
     text-align: center;
@@ -82,6 +88,12 @@ span.border-3{
 	span.border-2{
 	font-size: 18px;
 	}
+	.job{
+		display: none;
+	}
+	.contacts{
+		display: none;
+	}
 	
 }
 /*@media (max-width: 576px){
@@ -98,6 +110,11 @@ span.border-3{
 .caption-1 span.border-2{
 	color: #343A40;
 	font-size: 16pt;
+}
+.logo2 img{
+	width: 100%;
+	margin-top: 30%;
+	margin-left: 50%;
 }
 .bgimg-1 {
     background-image: url(../img/11.jpg);
@@ -145,7 +162,7 @@ button{
 	
 	border: 0px;
 	border-radius:12px;
-	background:#E17E27;
+	background:#F39200;
 	padding-top: 10px;
 	padding-bottom: 10px;  
 }
@@ -163,26 +180,57 @@ button a:hover{
 }
 
 .circle {
-	width: 100px;
+	/*width: 100px;
 	height: 100px;
 	background:#E17E27;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
-	border-radius: 50px;
-	margin-left: 42%;
+	border-radius: 50px;*/
+	position: relative;
 }
-.selection{
-  background-image: url(../img/icons.png);
+.circle h5{
+	padding-top: 135px;
+	text-align: center;
+
+}
+.selection, .froze, .production, .installation{
+  //background: url(../img/spait.png)  -833px -358px;
   background-repeat: no-repeat;
-  height: 98px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
   display: inline-block;
   position: absolute;
-  margin-right: 10px;
+  margin-left: 28.5%;
+}
+.selection{
+    background: url(../img/spait.png)  -833px -358px;
+}
+.froze{
+    background: url(../img/spait.png)  -361px -42px;
+}
+.production{
+	background: url(../img/spait.png)  -203px -358px;
+}
+.installation{
+	background: url(../img/spait.png)  -203px -672px;
 }
 .job{
 	min-height: 400px;
 }
-.no-gutters{
+.job2{
 	margin-top: 150px;
+}
+.gallery{
+	width: 100%;
+	opacity: 0.45;
+}
+.gallery:hover{
+	opacity: 1;
+}
+.gallery1{
+	padding: 0;
+}
+.footer{
+	min-height: 200px;
+	background: #343A40;
 }
