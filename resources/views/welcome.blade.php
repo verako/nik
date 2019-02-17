@@ -8,7 +8,7 @@
         
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -33,7 +33,7 @@
                     <a class="nav-link" href="#">О НАС</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">УСЛУГИ</a>
+                    <a class="nav-link" href="#">ТОВАРЫ</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">ГАЛЕРЕЯ</a>
@@ -43,7 +43,9 @@
                   </li>  
                 </ul>
             </div>
-            <div class="contacts">тел.+380984884442, +380994884442  email:nikszakaz@gmail.com</div>
+            <div class="contacts">
+                <i class="fas fa-mobile-alt"></i> +380984884442, +380994884442 <br> 
+                <i class="fas fa-envelope"></i> nikszakaz@gmail.com</div>
             </div>  
         </nav>
             @if (Route::has('login'))
@@ -73,12 +75,15 @@
                  </div>
             </div>
         </div>
+<!--About as-->        
         <div class="row">
             <div class="col-12 col-lg-6 aboutas">
                 <div  id="rectangle-left" ></div>
                 <h3>О НАС</h3>
                 <h5>Компания NIKS<sup>m</sup> является представителем одного из самых крупных производителей металлопластиковых окон в Украине.</h5>
-                <p>Мы используем материалы известных мировых производителей и высокотехнологичное производство. Отшлифованный до идеала профессионализм наших сотрудников позволяет изготавливать окна любой сложности и конфигурации.</p>
+                <p>Наша компания начала свой путь в 1997 году. Предприятие известно как завод металлопластиковых окон в Днепре. Но помимо производства металлопластиковых окон и дверей, компания также специализируется на окнах и дверях из алюминия. Наша продукция известна во многих регионах Украины и пользуется заслуженной популярностью среди потребителей. Мы уделяем максимальное количество вниманиявопросам качества, чтобы изделия служили нашим клиентам на протяжении долгого времени.</p>
+                <p>Если вам нужны действительно качественные металлопластиковые окна и двери, а также комплектующие по приемлемой стоимости, вы всегда можете обратиться к нам. Мы гарантируем высокое качество наших изделий, а срок официальной гарантии составляет 5 лет.</p>
+                <p>Мы создаем атмосферу, в которой нашим клиентам приятно работать с нами. В любое время на сайте доступен онлайн-консультант, который поможет разобраться в преимуществах тех или иных решений, и выбрать наиболее подходящее, по самой выгодной цене.</p> 
                 <button class="contact"> <a href="">связаться с нами</a></button>
             </div>
             <div class="col-12 col-lg-6 about">
@@ -99,14 +104,15 @@
               </div>
           </div>
         </div>
-
+<!-- Job -->
         <div class="job" style="position:relative;">
             <div class="row">
                 <div class="col-3 caption-1" style="top:10%">
-                <div  class="rectangle"></div>
-                <h3>КАК МЫ РАБОТАЕМ</h3>
+                    <div  class="rectangle"></div>
+                    <h3>КАК МЫ РАБОТАЕМ</h3>
+                </div>
             </div>
-            </div>
+            
             <div class="row no-gutters job2">
                 <div class="col-12 col-lg-3 circle">
                     
@@ -134,6 +140,62 @@
                 </div>
             </div>
         </div>
+<!-- Vybor -->
+        <div class="vybor" style="position:relative;">
+            <div class="row">
+                <div class="col-3 caption-1" style="top:10%">
+                <div  class="rectangle1"></div>                
+            </div>
+            <div class="row">
+                <div class="col-6 col-lg-6 caption">
+                   <h3>ПРИ ВЫБОРЕ ОКОН НЕОБХОДИМО ОБРАТИТЬ ВНИМАНИЕ НА:</h3> 
+                </div>
+            </div>
+            </div>
+            <div class="row no-gutters job2">
+                <div class="col-12 col-lg-4 ">                    
+                    <div class="vybor1"><img src="img/vybor1.png" alt=""></div>
+                    <h5>Профиль ПВХ</h5>
+                    <p>Лучшим производителем профильных систем считаются немецкие фирмы, с безукоризненной репутацией. При изготовлении используются качественные экологически чистые компоненты, не содержащие тяжелые металлы (свинец).</p>                    
+                </div>
+                <div class="col-12 col-lg-4 ">
+                    <div class="vybor1"><img src="img/vybor2.png" alt=""></div>
+                    <h5>Стеклопакет</h5> 
+                    <p>Стеклопакет занимает наибольшую площадь в окне, поэтому к нему самые большие требования. Стекло должно быть марки М1, М0 с напылением ионов серебра для хорошей защиты от холода и сохранения тепла.</p>                   
+                </div>
+                <div class="col-12 col-lg-4 ">                 
+                    <div class="vybor1"><img src="img/vybor3.png" alt=""></div>
+                    <h5>Фурнитура</h5>  
+                    <p>Наиболее качественной считается фурни- тура произведённая в Германии. Передовые технологии, использование качественного металла, инженерные решения и нано- покрытие - это залог длительной и комфортной эксплуатации окна, а также защита от взлома.</p>                  
+                </div>
+            </div>
+        </div>
+<!-- products -->
+        <div class="products" style="position:relative;">
+            <div class="row no-gutters">
+                <div class="col-12 col-lg-6 product1">
+                </div>
+                <div class="col-12 col-lg-6 product">
+                    <div  id="rectangle-right" ></div>
+                    <h3>НАШИ ТОВАРЫ</h3>
+                    <h5>Ассортимент предлагаемой нами продукции достаточно широк и включает в себя:</h5>
+                     <ul>
+                         <li>Металлопластиковые окна и двери (стандартные белые или ламинированные);</li>
+                         <li>Алюминиевые окна и двери;</li>
+                         <li>Фурнитуру и москитные сетки для окон и дверей;</li>
+                         <li>Подоконники и отливы для окон;</li>
+                         <li>Нестандартные конструкции из ПВХ и алюминия;</li>
+                         <li>Холодное и теплое остекление балконов и лоджий металлопластиком и алюминием, безрамное остекление;</li>
+                         <li>Роллетные ворота и решетки, автоматические ворота, рольставни;</li>
+                         <li>Офисные перегородки, раздвижные системы, накрытия для бассейнов;</li>
+                         <li>Автоматические окна и двери.</li>
+                     </ul>   
+                    
+                </div>                
+            </div>
+        </div>
+
+<!-- Gallery -->
         <div class="examples" style="position:relative;">
             <div class="row no-gutters">
                 <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery1.jpg" alt=""></div>
@@ -143,9 +205,9 @@
             </div>
             <div class="row no-gutters">
                 <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery5.jpg" alt=""></div>
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery3.jpg" alt=""></div>
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery2.jpg" alt=""></div>
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery1.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery6.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery7.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery9.jpg" alt=""></div>
             </div>
         </div>
         <div class="bgimg-3">
@@ -163,15 +225,41 @@
               </div>
           </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer" >
+            <div class="row">
+                <div class="col-12 col-lg-4 logo3"> <a class="navbar-brand" href="#"><img src="img/logo2.png" width="300px" alt="logo"></a></div>
+                <div class="col-12 col-lg-4 menu">
+                    <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ГЛАВНАЯ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">О НАС</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ТОВАРЫ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">ГАЛЕРЕЯ</a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 ">
+                    <div class="contacts footercontact">
+                        <i class="fas fa-mobile-alt"></i> +380984884442 <br> 
+                        <i class="fas fa-mobile-alt"></i> +380994884442 <br>  
+                        <i class="fas fa-envelope"></i> nikszakaz@gmail.com</div>
+                    </div>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-12 prava">
+                    <p>© 2019 Все права защищены.</p> 
+                </div>
+            </div>
+           
+        </div>
 
-       
-
-        <!-- <div class="bgimg-1">
-          <div class="caption">
-          <span class="border">COOL!</span>
-          </div>
-        </div> -->
     </div>
 
 </body>

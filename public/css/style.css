@@ -11,6 +11,8 @@ nav{
 }
 .contacts{
 	font-size: 12px;
+	letter-spacing: 1px;
+	color: white;
 }
 .container{
 	padding: 0;
@@ -26,7 +28,7 @@ a:hover{
 	margin: 0
 }
 .col-12, .col-6, .col-lg-6{
-	color: #777;
+	color: #343A40;
 	text-align: justify;
 	padding-left: 0;
 	padding-top:30px;
@@ -35,6 +37,13 @@ a:hover{
 	width: 100%;
 	height: 5px;
 	background: #F39200;
+	position: absolute;
+	
+}
+.rectangle1 {
+	width: 100%;
+	height: 5px;
+	background: white;
 	position: absolute;
 	
 }
@@ -84,6 +93,9 @@ span.border-3{
 	font-size: 16px;
     letter-spacing: 1px;
 }
+.flex-column{
+	padding-left: 20%;
+}
 @media (max-width: 992px){
 	span.border-2{
 	font-size: 18px;
@@ -93,6 +105,18 @@ span.border-3{
 	}
 	.contacts{
 		display: none;
+	}
+	.vybor{
+		display: none;
+	}
+	.product1{
+		display: none;
+	}
+	.flex-column{
+		padding-left: 42%;
+	}
+	.logo3{
+		padding-left: 28%;
 	}
 	
 }
@@ -113,8 +137,8 @@ span.border-3{
 }
 .logo2 img{
 	width: 100%;
-	margin-top: 30%;
-	margin-left: 50%;
+	margin-top: 200px;
+	margin-left: 55%;
 }
 .bgimg-1 {
     background-image: url(../img/11.jpg);
@@ -151,7 +175,7 @@ h3{
 .aboutas{
 	padding-left: 15px;
 }
-.aboutas h3{
+.aboutas h3, .product h3{
 	margin-top: 25px;
 }
 .aboutas p{
@@ -194,7 +218,6 @@ button a:hover{
 
 }
 .selection, .froze, .production, .installation{
-  //background: url(../img/spait.png)  -833px -358px;
   background-repeat: no-repeat;
   height: 120px;
   width: 120px;
@@ -220,6 +243,53 @@ button a:hover{
 .job2{
 	margin-top: 150px;
 }
+.vybor{
+	min-height: 450px;
+	background: #EC7700;
+}
+.vybor h5, .vybor h3{
+	margin-top: 10px;
+	color: white;
+	text-align: center;
+}
+/*.vybor h5{
+	margin-top: 10px;
+}*/
+.vybor p{
+	color: white;
+	text-align: left;
+	margin-left: 10%;
+	margin-right: 5%;
+}
+.vybor1 img{
+	width: 150px;
+	margin-left: 29%;
+}
+.product h3,.product h5{
+	margin-left: 15px;
+}
+.product1{
+	min-height: 400px;
+	background-image: url(../img/prod.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#rectangle-right{
+	width: 15%;
+	height: 5px;
+	background: #F39200;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.product li{
+	list-style: none; /* Убираем исходные маркеры */
+    background: url(../img/marker1.png) no-repeat 0 4px; /* Параметры фона */
+    padding-left: 25px; 
+}
+.product ul{
+	padding-left: 25px
+}
 .gallery{
 	width: 100%;
 	opacity: 0.45;
@@ -233,4 +303,24 @@ button a:hover{
 .footer{
 	min-height: 200px;
 	background: #343A40;
+}
+.menu{
+	padding-bottom: 30px
+}
+.flex-column a{
+	color: #999C8D;
+}
+.flex-column a:hover{
+	color: #CBCDBE;
+}
+.footercontact{
+	font-size: 20px;
+}
+.prava{
+	text-align: center;
+	height: 25px;
+	color: #999C8D;
+	background: #16181B;
+	padding:0;
+	font-size: 12px
 }
