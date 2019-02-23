@@ -14,7 +14,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-     
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script> 
+        <script src="js/script.js" type="text/javascript"></script>
     </head>
     <body>
     
@@ -30,16 +31,16 @@
                     <a class="nav-link" href="#">ГЛАВНАЯ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">О НАС</a>
+                    <a class="nav-link" href="#about">О НАС</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">ТОВАРЫ</a>
+                    <a class="nav-link" href="#products">ТОВАРЫ</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">ГАЛЕРЕЯ</a>
+                    <a class="nav-link" href="#gallery">ГАЛЕРЕЯ</a>
                   </li>  
                   <li class="nav-item">
-                    <a class="nav-link" href="#">КОНТАКТЫ</a>
+                    <a class="nav-link" href="#contacts">КОНТАКТЫ</a>
                   </li>  
                 </ul>
             </div>
@@ -76,7 +77,7 @@
             </div>
         </div>
 <!--About as-->        
-        <div class="row">
+        <div class="row" id="about">
             <div class="col-12 col-lg-6 aboutas">
                 <div  id="rectangle-left" ></div>
                 <h3>О НАС</h3>
@@ -172,7 +173,7 @@
             </div>
         </div>
 <!-- products -->
-        <div class="products" style="position:relative;">
+        <div class="products" id="products" style="position:relative;">
             <div class="row no-gutters">
                 <div class="col-12 col-lg-6 product1">
                 </div>
@@ -197,7 +198,8 @@
         </div>
 
 <!-- Gallery -->
-        <div class="examples" style="position:relative;">
+        <span id="gallery"></span>
+        <div class="examples"  style="position:relative;">
             <div class="row no-gutters">
                 <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery1.jpg" alt=""></a></div>
                 <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery2.jpg" alt=""></a></div>
@@ -290,7 +292,7 @@
             </div>
         </div><!-- /.container -->
 <!-- 2 -->
-        <div class="bgimg-3">
+        <div class="bgimg-3" id="contacts">
           <div class="row">
             <div class="col-3 caption-1" style="top:10%">
                 <div  class="rectangle"  ></div>
