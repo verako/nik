@@ -83,12 +83,13 @@
                 <h5>Компания NIKS<sup>m</sup> является представителем одного из самых крупных производителей металлопластиковых окон в Украине.</h5>
                 <p>Наша компания начала свой путь в 1997 году. Предприятие известно как завод металлопластиковых окон в Днепре. Но помимо производства металлопластиковых окон и дверей, компания также специализируется на окнах и дверях из алюминия. Наша продукция известна во многих регионах Украины и пользуется заслуженной популярностью среди потребителей. Мы уделяем максимальное количество вниманиявопросам качества, чтобы изделия служили нашим клиентам на протяжении долгого времени.</p>
                 <p>Если вам нужны действительно качественные металлопластиковые окна и двери, а также комплектующие по приемлемой стоимости, вы всегда можете обратиться к нам. Мы гарантируем высокое качество наших изделий, а срок официальной гарантии составляет 5 лет.</p>
-                <p>Мы создаем атмосферу, в которой нашим клиентам приятно работать с нами. В любое время на сайте доступен онлайн-консультант, который поможет разобраться в преимуществах тех или иных решений, и выбрать наиболее подходящее, по самой выгодной цене.</p> 
+                <p>Мы создаем атмосферу, в которой нашим клиентам приятно работать с нами.</p> 
                 <button class="contact"> <a href="">связаться с нами</a></button>
             </div>
             <div class="col-12 col-lg-6 about">
             </div>
         </div>
+<!--    1 -->
         <div class="bgimg-2">
           <div class="row">
             <div class="col-3 caption-1" style="top:10%">
@@ -96,7 +97,7 @@
             </div>
           </div>
           <div class="row">  
-              <div class="col-6 col-lg-6 caption">
+              <div class="col-12 col-lg-6 caption">
              
               <span class="border-2">У Вас есть вопросы? Оставьте заявку и мы перезвоним!</span><br>
               <button class="contact"><a href="">связаться с нами</a></button><br>
@@ -198,18 +199,97 @@
 <!-- Gallery -->
         <div class="examples" style="position:relative;">
             <div class="row no-gutters">
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery1.jpg" alt=""></div>
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery2.jpg" alt=""></div>
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery3.jpg" alt=""></div>
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery4.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery1.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery2.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery3.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery4.jpg" alt=""></a></div>
             </div>
             <div class="row no-gutters">
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery5.jpg" alt=""></div>
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery6.jpg" alt=""></div>
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery7.jpg" alt=""></div>
-                <div class="col-12 col-lg-3 gallery1"><img class="gallery" src="img/gallery9.jpg" alt=""></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery5.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery6.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery7.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery9.jpg" alt=""></a></div>
             </div>
         </div>
+    <!-- carousel -->    
+        <div class="container">
+            <div class="modal fade and carousel slide" id="lightbox1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="img/gallery1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/gallery2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/gallery3.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/gallery4.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/gallery5.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/gallery6.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/gallery7.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="img/gallery9.jpg" alt="Third slide">
+                        </div>
+                      </div><!-- /.carousel-inner -->
+                      <a class="carousel-control-prev" href="#lightbox1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#lightbox1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div><!-- /.modal-body -->
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+    <!-- carousel mobile -->
+            <div class="carousel slide mobilever" data-ride="carousel" id="lightbox">
+               <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/gallery1.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery2.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery3.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery4.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery5.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery6.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery7.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery9.jpg" alt="Second slide">
+                    </div>
+                </div><!-- /.carousel-inner -->
+                    <a class="carousel-control-prev" href="#lightbox" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#lightbox" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+            </div>
+        </div><!-- /.container -->
+<!-- 2 -->
         <div class="bgimg-3">
           <div class="row">
             <div class="col-3 caption-1" style="top:10%">
@@ -217,11 +297,10 @@
             </div>
           </div>
           <div class="row">  
-              <div class="col-6 col-lg-6 caption">
-             
-              <span class="border-2">У Вас остались вопросы? Оставьте заявку и мы перезвоним!</span><br>
-              <button class="contact"><a href="">связаться с нами</a></button><br>
-              <span class="border-3">Наши контакты: тел.+380984884442, +380994884442  email:nikszakaz@gmail.com</span>
+              <div class="col-12 col-lg-6 caption">             
+                <span class="border-2">У Вас остались вопросы? <span class="mob">Оставьте заявку и мы перезвоним!</span> </span><br>
+                <button class="contact"><a href="">связаться с нами</a></button><br>
+                <span class="border-3">Наши контакты: тел.+380984884442, +380994884442  email:nikszakaz@gmail.com</span>
               </div>
           </div>
         </div>

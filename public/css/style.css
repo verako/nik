@@ -96,6 +96,9 @@ span.border-3{
 .flex-column{
 	padding-left: 20%;
 }
+.mobilever{
+	display: none;
+}
 @media (max-width: 992px){
 	span.border-2{
 	font-size: 18px;
@@ -118,6 +121,22 @@ span.border-3{
 	.logo3{
 		padding-left: 28%;
 	}
+	.mobilever{
+		display: block;
+	}
+	.examples{
+		display: none;
+	}
+	button a{
+		margin: 5px;
+		}
+	button{
+		font-size: 12px;
+	}
+	.caption{
+		left: 0;
+	}
+	
 	
 }
 /*@media (max-width: 576px){
@@ -294,12 +313,84 @@ button a:hover{
 	width: 100%;
 	opacity: 0.45;
 }
-.gallery:hover{
-	opacity: 1;
-}
-.gallery1{
+.pic, .picture{
 	padding: 0;
 }
+.pic img{
+	display: block;
+	min-height: 100%;
+	-webkit-transition: opacity 0.35s;
+	-o-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+	position: relative;
+	
+}
+.pic:hover img{
+	background-size: cover;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-o-transform: scale(0.95);
+	transform: scale(0.95);
+	opacity: 1;
+}
+
+.pic:after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border-right: 1px #F39200 solid;
+	border-left: 1px #F39200 solid;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transform: scale(1,0);
+	-ms-transform: scale(1,0);
+	-o-transform: scale(1,0);
+	transform: scale(1,0);
+	opacity: 0;
+	z-index: 10;
+
+}
+.pic:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border-bottom: 1px #F39200 solid;
+	border-top: 1px #F39200 solid;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	-webkit-transform: scale(0,1);
+	-ms-transform: scale(0,1);
+	-o-transform: scale(0,1);
+	transform: scale(0,1);
+	opacity: 0;
+	z-index: 10;
+
+}
+.pic:hover:after, .pic:hover:before{
+
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+/*.gallery:hover{
+	opacity: 1;
+}*/
+
 .footer{
 	min-height: 200px;
 	background: #343A40;
@@ -323,4 +414,18 @@ button a:hover{
 	background: #16181B;
 	padding:0;
 	font-size: 12px
+}
+.modal.and.carousel {
+  position: fixed; // Needed because the carousel overrides the position property
+}
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 700px;
+    margin: 1.75rem auto;
+	}
 }
