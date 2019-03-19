@@ -30,13 +30,21 @@ a:hover{
 .col-12, .col-6, .col-lg-6{
 	color: #343A40;
 	text-align: justify;
-	padding-left: 0;
+	padding-left: 10px;
+	padding-right: 10px;
 	padding-top:30px;
 }
 .rectangle {
-	width: 100%;
+	width: 80%;
 	height: 5px;
 	background: #F39200;
+	position: absolute;
+	
+}
+.rectangle_white {
+	width: 80%;
+	height: 5px;
+	background: #fff;
 	position: absolute;
 	
 }
@@ -47,28 +55,54 @@ a:hover{
 	position: absolute;
 	
 }
+
 #rectangle-left{
 	width: 15%;
 	height: 5px;
 	background: #F39200;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 .caption {
+    position: absolute;
+    left: 25.5%;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: #343A40;
+}
+.caption-2 {
+    position: absolute;
+    left: 25%;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    color: #343A40;
+}
+.caption-1 {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    color: #343A40;
+    margin: 0;
+    padding: 0
+}
+.caption-3 {
     position: absolute;
     left: 25%;
     top: 10%;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: #343A40;
 }
-
-.caption-1 {
+.caption-white {
     position: absolute;
-    left: 36.5%;
-    top: 30%;
+    left: 40%;
+    top: 10%;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: #343A40;
     margin: 0;
     padding: 0
 }
@@ -119,7 +153,7 @@ span.border-3{
 		padding-left: 42%;
 	}
 	.logo3{
-		padding-left: 28%;
+		padding-left: 10%;
 	}
 	.mobilever{
 		display: block;
@@ -131,7 +165,7 @@ span.border-3{
 		margin: 5px;
 		}
 	button{
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.caption{
 		left: 0;
@@ -160,17 +194,18 @@ span.border-3{
 	margin-left: 55%;
 }
 .bgimg-1 {
-    background-image: url(../img/11.jpg);
+    background-image: url(../img/111.jpg);
     min-height: 600px;
+    width: 100%;
 }
 
 .bgimg-2 {
     background-image: url(../img/22.jpg);
-    min-height: 400px;
+    min-height: 420px;
 }
 .bgimg-3 {
     background-image: url(../img/33.jpg);
-    min-height: 400px;
+    min-height: 420px;
 }
 .bgimg-1, .bgimg-2, .bgimg-3 {
     position: relative;
@@ -180,9 +215,19 @@ span.border-3{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+h5{
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
 h3{
-	margin-top: 40px
+	margin-top: 30px;
+}
+#rectangle-right{
+	width: 15%;
+	height: 5px;
+	background: #F39200;
+	margin-top: 10px;
+	margin-left: 15px;
 }
 .about{
 	min-height: 400px;
@@ -193,18 +238,21 @@ h3{
 }
 .aboutas{
 	padding-left: 15px;
+	padding-right: 30px;
 }
-.aboutas h3, .product h3{
-	margin-top: 25px;
-}
+
 .aboutas p{
 	margin-bottom: 0;
 	letter-spacing: 1px;
 }
+.toggle{
+	color: #F39200;
+	cursor: pointer;
+}
 button{
 	
 	border: 0px;
-	border-radius:12px;
+	//border-radius:12px;
 	background:#F39200;
 	padding-top: 10px;
 	padding-bottom: 10px;  
@@ -215,11 +263,10 @@ button a{
 }
 button a:hover{
 	color: #000;
-	
 }
 .contact{
-	margin-top: 25px; 
-	margin-bottom: 25px; 
+	margin-top: 40px; 
+	margin-bottom: 50px; 
 }
 
 .circle {
@@ -260,31 +307,40 @@ button a:hover{
 	min-height: 400px;
 }
 .job2{
-	margin-top: 150px;
+	margin-top: 200px;
+	margin-bottom: 50px;
 }
-.vybor{
+.products{
 	min-height: 450px;
-	background: #EC7700;
+	background: #F9AE3E;
 }
-.vybor h5, .vybor h3{
-	margin-top: 10px;
-	color: white;
+#certificates{
+	min-height: 450px;
+	background: #F9AE3E;
+}
+
+.vybor h5{
+	margin-top: 30px;
 	text-align: center;
+	margin-bottom: 50px;
+	color: #343A40;
 }
-/*.vybor h5{
-	margin-top: 10px;
-}*/
-.vybor p{
-	color: white;
-	text-align: left;
-	margin-left: 10%;
-	margin-right: 5%;
+.vybor1 h5:hover{
+	color: #fff;
 }
-.vybor1 img{
-	width: 150px;
-	margin-left: 29%;
+.vybor1 {
+	margin-top: 200px;
 }
-.product h3,.product h5{
+.carousel-control-next, .carousel-control-prev {
+	top: 30%
+}
+.carousel-control-prev {
+	left: -8%
+}
+.carousel-control-next{
+	right: -8%
+}
+/*.product h3,.product h5{
 	margin-left: 15px;
 }
 .product1{
@@ -293,25 +349,24 @@ button a:hover{
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-#rectangle-right{
-	width: 15%;
-	height: 5px;
-	background: #F39200;
-	margin-top: 10px;
-	margin-left: 15px;
-}
-.product li{
-	list-style: none; /* Убираем исходные маркеры */
-    background: url(../img/marker1.png) no-repeat 0 4px; /* Параметры фона */
-    padding-left: 25px; 
+}*/
+
+/*.product li{*/
+	/*list-style: none;  Убираем исходные маркеры */
+   /* background: url(../img/marker1.png) no-repeat 0 4px;  Параметры фона */
+   /* padding-left: 25px; 
 }
 .product ul{
 	padding-left: 25px
-}
+}*/
 .gallery{
 	width: 100%;
 	opacity: 0.45;
+}
+.certificat{
+	width: 80%;
+	margin-bottom: 50px;
+	margin-left: 10%
 }
 .pic, .picture{
 	padding: 0;
@@ -337,7 +392,7 @@ button a:hover{
 	opacity: 1;
 }
 
-.pic:after{
+/*.pic:after{
 	content: "";
 	display: block;
 	position: absolute;
@@ -357,17 +412,17 @@ button a:hover{
 	opacity: 0;
 	z-index: 10;
 
-}
+}*/
 .pic:before{
 	content: "";
 	display: block;
 	position: absolute;
 	top: 30px;
-	right: 30px;
+	right: 100px;
 	bottom: 30px;
-	left: 30px;
-	border-bottom: 1px #F39200 solid;
-	border-top: 1px #F39200 solid;
+	left: 100px;
+	//border-bottom: 1px #F39200 solid;
+	border-top: 2px #F39200 solid;
 	-webkit-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
