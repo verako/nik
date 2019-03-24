@@ -86,7 +86,36 @@
                     Если вам нужны действительно качественные металлопластиковые окна и двери, а также комплектующие по приемлемой стоимости, вы всегда можете обратиться к нам. Мы гарантируем высокое качество наших изделий, а срок официальной гарантии составляет 5 лет.<br>
                     Мы создаем атмосферу, в которой нашим клиентам приятно работать с нами.</div>
                     <div class="toggle">Читать далее...</div>
-                    <button class="contact"> <a href="">связаться с нами</a></button>
+                    <button class="contact" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">связаться с нами</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <form>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                              </div>
+                              <div class="form-group">
+                                <label for="message-text" class="col-form-label">Телефон:</label>
+                                <input type="number" class="form-control" id="recipient-tel">
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="contact close1" data-dismiss="modal">закрыть</button>
+                            <button type="button" class="contact send1">отправить</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
                 <div class="col-12 col-lg-6 about">
                 </div>
@@ -104,7 +133,7 @@
                   <div class="col-12 col-lg-6 caption">
                  
                   <span class="border-2">У Вас есть вопросы? Оставьте заявку и мы перезвоним!</span><br>
-                  <button class="contact"><a href="">связаться с нами</a></button><br>
+                  <button class="contact" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">связаться с нами</button><br>
                   <span class="border-3">Наши контакты: тел.+380984884442, +380994884442  email:nikszakaz@gmail.com</span>
                   </div>
               </div>
@@ -164,12 +193,49 @@
                             </div>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="row vybor">
+                           <!--  <div class="col-12 col-lg-1 "></div> -->
+                            <div class="col-12 col-lg-3 ">                    
+                                <div class="vybor1">
+                                    <a href="">
+                                        <img src="img/okna1.jpg" alt="">
+                                        <h5>Металлопластиковые окна и двери </h5> 
+                                    </a>  
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 ">                    
+                                <div class="vybor1">
+                                    <a href="">
+                                        <img src="img/okna1.jpg" alt="">
+                                        <h5>Алюминиевые окна и двери</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 ">                    
+                                <div class="vybor1">
+                                    <a href="">
+                                        <img src="img/okna1.jpg" alt="">
+                                        <h5>Роллетные ворота и решетки</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 ">                    
+                                <div class="vybor1">
+                                    <a href="">
+                                        <img src="img/okna1.jpg" alt="">
+                                        <h5>Офисные перегородки</h5>
+                                    </a>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
                     
                 </div><!-- /.carousel-inner -->
-                    <a class="carousel-control-prev" href="#light" role="button" data-slide="prev">
+                    <a class="carousel-control-prev prev" href="#light" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
-                    <a class="carousel-control-next" href="#light" role="button" data-slide="next">
+                    <a class="carousel-control-next next" href="#light" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
             </div>
@@ -366,6 +432,63 @@
                     </a>
             </div>
         </div><!-- /.container -->
+<!-- reviews -->
+    <div id="reviews" style="position:relative;">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 caption-white" >
+                    <div  class="rectangle"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 caption-3" >
+                    <h3>ОТЗЫВЫ</h3>
+                </div>
+            </div>
+            <div class="examples"  style="position:relative;">
+                <div class="row ">
+                    <div class="col-12 col-lg-4 picture otz">
+                        <a href="#lightbox3" data-toggle="modal" ><img class="certificat" src="img/otz11.jpg" alt=""></a>
+                    </div>
+                    <div class="col-12 col-lg-4 picture otz">
+                        <a href="#lightbox3" data-toggle="modal" ><img class="certificat" src="img/otz22.jpg" alt=""></a>
+                    </div>
+                    <div class="col-12 col-lg-4 picture otz">
+                        <a href="#lightbox3" data-toggle="modal" ><img class="certificat" src="img/otz33.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- carousel -->    
+        <div class="container">
+            <div class="modal fade and carousel slide" id="lightbox3">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="img/otz1.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img/otz2.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img/otz3.jpg" alt="Third slide">
+                            </div>
+                        </div><!-- /.carousel-inner -->
+                      <a class="carousel-control-prev" href="#lightbox3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a class="carousel-control-next" href="#lightbox3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                      </a>
+                    </div><!-- /.modal-body -->
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div>
+    </div>
+
 <!-- 2 -->
         <div class="bgimg-3" id="contacts">
           <div class="row">
@@ -376,13 +499,12 @@
           <div class="row">  
               <div class="col-12 col-lg-6 caption">             
                 <span class="border-2">У Вас остались вопросы? <span class="mob">Оставьте заявку и мы перезвоним!</span> </span><br>
-                <button class="contact"><a href="">связаться с нами</a></button><br>
+                <button class="contact" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">связаться с нами</button><br>
                 <span class="border-3">Наши контакты: тел.+380984884442, +380994884442  email:nikszakaz@gmail.com</span>
               </div>
           </div>
         </div>
 
-<!-- reviews -->
 
 
 <!-- certificates -->
@@ -400,16 +522,16 @@
             </div>
             <div class="examples"  style="position:relative;">
                 <div class="row ">
-                    <div class="col-12 col-lg-3 picture vybor1">
+                    <div class="col-12 col-lg-3 picture cert">
                         <a href="#lightbox2" data-toggle="modal" ><img class="certificat" src="img/cert11.jpg" alt=""></a>
                     </div>
-                    <div class="col-12 col-lg-3 picture vybor1">
+                    <div class="col-12 col-lg-3 picture cert">
                         <a href="#lightbox2" data-toggle="modal" ><img class="certificat" src="img/cert22.jpg" alt=""></a>
                     </div>
-                    <div class="col-12 col-lg-3 picture vybor1">
+                    <div class="col-12 col-lg-3 picture cert">
                         <a href="#lightbox2" data-toggle="modal" ><img class="certificat" src="img/cert33.jpg" alt=""></a>
                     </div>
-                    <div class="col-12 col-lg-3 picture vybor1">
+                    <div class="col-12 col-lg-3 picture cert">
                         <a href="#lightbox2" data-toggle="modal" ><img class="certificat" src="img/cert444.jpg" alt=""></a>
                     </div>
                 </div>
