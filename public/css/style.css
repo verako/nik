@@ -133,46 +133,22 @@ span.border-3{
 .mobilever{
 	display: none;
 }
-@media (max-width: 992px){
-	span.border-2{
-	font-size: 18px;
-	}
-	.job{
-		display: none;
-	}
-	.contacts{
-		display: none;
-	}
-	.vybor{
-		display: none;
-	}
-	.product1{
-		display: none;
-	}
-	.flex-column{
-		padding-left: 42%;
-	}
-	.logo3{
-		padding-left: 10%;
-	}
-	.mobilever{
-		display: block;
-	}
-	.examples{
-		display: none;
-	}
-	button a{
-		margin: 5px;
-		}
-	button{
-		font-size: 16px;
-	}
-	.caption{
-		left: 0;
-	}
-	
-	
+.carousel-control-prev{
+	left: -10%;
 }
+.carousel-control-next{
+	right: -10%;
+}
+.next, .prev {
+	top: 30%;
+}
+.prev {
+	left: -8%;
+}
+.next{
+	right: -8%;
+}
+
 /*@media (max-width: 576px){
 	.container{
 		width: 100%;
@@ -188,6 +164,7 @@ span.border-3{
 	color: #343A40;
 	font-size: 16pt;
 }
+
 .logo2 img{
 	width: 100%;
 	margin-top: 200px;
@@ -219,6 +196,7 @@ h5{
 	margin-top: 25px;
 	margin-bottom: 20px;
 }
+
 h3{
 	margin-top: 30px;
 }
@@ -236,6 +214,7 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .aboutas{
 	padding-left: 15px;
 	padding-right: 30px;
@@ -276,6 +255,7 @@ button a:hover{
 .close1{
 	background: #7E7D7D;
 }
+
 .send1{
 	background: #F39200;
 }
@@ -310,6 +290,7 @@ button a:hover{
   position: absolute;
   margin-left: 28.5%;
 }
+
 .selection{
     background: url(../img/spait.png)  -833px -358px;
 }
@@ -333,6 +314,9 @@ button a:hover{
 	min-height: 450px;
 	background: #F9AE3E;
 }
+.description img{
+	width: 100%;
+}
 #certificates{
 	min-height: 450px;
 	background: #F9AE3E;
@@ -347,27 +331,14 @@ button a:hover{
 	margin-bottom: 50px;
 	color: #343A40;
 }
+
 .vybor1 h5:hover{
 	color: #fff;
 }
 .vybor1 {
 	margin-top: 200px;
 }
-.carousel-control-prev{
-	left: -10%;
-}
-.carousel-control-next{
-	right: -10%;
-}
-.next, .prev {
-	top: 30%;
-}
-.prev {
-	left: -8%;
-}
-.next{
-	right: -8%;
-}
+
 /*.product h3,.product h5{
 	margin-left: 15px;
 }
@@ -396,6 +367,7 @@ button a:hover{
 	margin-bottom: 50px;
 	margin-left: 10%
 }
+
 .cert{
 	margin-top: 230px;
 }
@@ -447,6 +419,7 @@ button a:hover{
 	z-index: 10;
 
 }*/
+
 .pic:before{
 	content: "";
 	display: block;
@@ -514,7 +487,79 @@ button a:hover{
       width: 100%;
       height: 100%;
 }
+@media (max-width: 992px){
+	span.border-2{
+	font-size: 18px;
+	}
+	.job{
+		display: none;
+	}
+	.contacts{
+		display: none;
+	}
+	.vybor{
+		display: none;
+	}
+	.product1{
+		display: none;
+	}
+	.flex-column{
+		padding-left: 42%;
+	}
+	.logo3{
+		padding-left: 10%;
+	}
+	.mobilever{
+		display: block;
+	}
+	.examples{
+		display: none;
+	}
+	button a{
+		margin: 5px;
+		}
+	button{
+		font-size: 16px;
+	}
+	.caption{
+		left: 0;
+	}
+	.carousel-control-prev{
+		left: 0;
+	}
+	.carousel-control-next{
+		right: 0;
+	}
+	.prev {
+		left: 0;
+	}
+	.next{
+		right: 0;
+	}
+	#certificates{
+		display: none;
+	}
+	#reviews{
+		display: none;
+	}
+	#light1{
+		margin-top: 230px;
+		min-height: 500px;
+	}
+	#light{
+		display: none;
+	}
+	.carousel-inner h5{
+	margin-top: 30px;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #343A40;
+	}
 
+	.carousel-item h5:hover{
+		color: #fff;
+	}	
+}
 @media (min-width: 576px){
 .modal-dialog {
     max-width: 700px;

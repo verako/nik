@@ -17,6 +17,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script> 
         <script src="js/script_hide.js" type="text/javascript"></script>
+        <script src="js/script_active.js" type="text/javascript"></script>
         <script src="js/script.js" type="text/javascript"></script>
     </head>
     <body>
@@ -87,12 +88,12 @@
                     Мы создаем атмосферу, в которой нашим клиентам приятно работать с нами.</div>
                     <div class="toggle">Читать далее...</div>
                     <button class="contact" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">связаться с нами</button>
-
+<!-- modal окно связи -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Заполните форму и мы перезвоним!</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -100,7 +101,7 @@
                           <div class="modal-body">
                             <form>
                               <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <label for="recipient-name" class="col-form-label">Как к Вам обратиться?:</label>
                                 <input type="text" class="form-control" id="recipient-name">
                               </div>
                               <div class="form-group">
@@ -116,6 +117,7 @@
                         </div>
                       </div>
                     </div>
+<!-- /modal окно связи -->                    
                 </div>
                 <div class="col-12 col-lg-6 about">
                 </div>
@@ -141,7 +143,7 @@
         </div>
 
 <!-- produkts -->        
-        <div class="products" style="position:relative;">
+        <div class="products" id="products" style="position:relative;">
             <div class="container">
                 <div class="row">
                     <div class="col-3 caption-white" >
@@ -154,91 +156,180 @@
                     </div>
                 </div>
 
-               <div class="carousel slide " data-ride="carousel" id="light">
-               <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row vybor">
-                           <!--  <div class="col-12 col-lg-1 "></div> -->
-                            <div class="col-12 col-lg-3 ">                    
-                                <div class="vybor1">
-                                    <a href="">
-                                        <img src="img/okna1.jpg" alt="">
-                                        <h5>Металлопластиковые окна и двери </h5> 
-                                    </a>  
+                <div class="carousel slide " data-ride="carousel" id="light">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row vybor">
+                               <!--  <div class="col-12 col-lg-1 "></div> -->
+                                <div class="col-12 col-lg-3 ">                    
+                                    <div class="vybor1">
+                                        <a href="" data-toggle="modal" data-target="#lightModal">
+                                            <img src="img/okna1.jpg" alt="">
+                                            <h5>Металлопластиковые окна и двери </h5> 
+                                        </a>  
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-3 ">                    
-                                <div class="vybor1">
-                                    <a href="">
-                                        <img src="img/okna1.jpg" alt="">
-                                        <h5>Алюминиевые окна и двери</h5>
-                                    </a>
+                                <div class="col-12 col-lg-3 ">                    
+                                    <div class="vybor1">
+                                        <a href="" data-toggle="modal" data-target="#lightModal">
+                                            <img src="img/okna1.jpg" alt="">
+                                            <h5>Алюминиевые окна и двери</h5>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-3 ">                    
-                                <div class="vybor1">
-                                    <a href="">
-                                        <img src="img/okna1.jpg" alt="">
-                                        <h5>Роллетные ворота и решетки</h5>
-                                    </a>
+                                <div class="col-12 col-lg-3 ">                    
+                                    <div class="vybor1">
+                                        <a href="" data-toggle="modal" data-target="#lightModal">
+                                            <img src="img/okna1.jpg" alt="">
+                                            <h5>Роллетные ворота и решетки</h5>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-3 ">                    
-                                <div class="vybor1">
-                                    <a href="">
-                                        <img src="img/okna1.jpg" alt="">
-                                        <h5>Офисные перегородки</h5>
-                                    </a>
-                                </div>  
+                                <div class="col-12 col-lg-3 ">                    
+                                    <div class="vybor1">
+                                        <a href="" data-toggle="modal" data-target="#lightModal">
+                                            <img src="img/okna1.jpg" alt="">
+                                            <h5>Офисные перегородки</h5>
+                                        </a>
+                                    </div>  
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row vybor">
-                           <!--  <div class="col-12 col-lg-1 "></div> -->
-                            <div class="col-12 col-lg-3 ">                    
-                                <div class="vybor1">
-                                    <a href="">
-                                        <img src="img/okna1.jpg" alt="">
-                                        <h5>Металлопластиковые окна и двери </h5> 
-                                    </a>  
+                        <div class="carousel-item">
+                            <div class="row vybor">
+                               <!--  <div class="col-12 col-lg-1 "></div> -->
+                                <div class="col-12 col-lg-3 ">                    
+                                    <div class="vybor1">
+                                        <a href="" data-toggle="modal" data-target="#lightModal">
+                                            <img src="img/okna1.jpg" alt="">
+                                            <h5>Металлопластиковые окна и двери </h5> 
+                                        </a>  
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-3 ">                    
-                                <div class="vybor1">
-                                    <a href="">
-                                        <img src="img/okna1.jpg" alt="">
-                                        <h5>Алюминиевые окна и двери</h5>
-                                    </a>
+                                <div class="col-12 col-lg-3 ">                    
+                                    <div class="vybor1">
+                                        <a href="" data-toggle="modal" data-target="#lightModal">
+                                            <img src="img/okna1.jpg" alt="">
+                                            <h5>Алюминиевые окна и двери</h5>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-3 ">                    
-                                <div class="vybor1">
-                                    <a href="">
-                                        <img src="img/okna1.jpg" alt="">
-                                        <h5>Роллетные ворота и решетки</h5>
-                                    </a>
+                                <div class="col-12 col-lg-3 ">                    
+                                    <div class="vybor1">
+                                        <a href="" data-toggle="modal" data-target="#lightModal">
+                                            <img src="img/okna1.jpg" alt="">
+                                            <h5>Роллетные ворота и решетки</h5>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-lg-3 ">                    
-                                <div class="vybor1">
-                                    <a href="">
-                                        <img src="img/okna1.jpg" alt="">
-                                        <h5>Офисные перегородки</h5>
-                                    </a>
-                                </div>  
+                                <div class="col-12 col-lg-3 ">                    
+                                    <div class="vybor1">
+                                        <a href="" data-toggle="modal" data-target="#lightModal">
+                                            <img src="img/okna1.jpg" alt="">
+                                            <h5>Офисные перегородки</h5>
+                                        </a>
+                                    </div>  
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                </div><!-- /.carousel-inner -->
+                        
+                    </div><!-- /.carousel-inner -->
                     <a class="carousel-control-prev prev" href="#light" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
                     <a class="carousel-control-next next" href="#light" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
-            </div>
+                </div>
+                <!-- carousel mobile -->
+                <div class="carousel slide mobilever" data-ride="carousel" id="light1">
+                   <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="" data-toggle="modal" data-target="#lightModal">
+                                <img src="img/okna1.jpg" alt="First slide">
+                                <h5>Металлопластиковые окна и двери </h5> 
+                            </a>  
+                        </div>
+                        <div class="carousel-item">
+                            <a href="" data-toggle="modal" data-target="#lightModal">
+                                <img src="img/okna1.jpg" alt="Second slide">
+                                <h5>Металлопластиковые окна и двери </h5> 
+                            </a> 
+                        </div>
+                        <div class="carousel-item">
+                            <a href="" data-toggle="modal" data-target="#lightModal">
+                                <img src="img/okna1.jpg" alt="Third slide">
+                                <h5>Металлопластиковые окна и двери </h5> 
+                            </a> 
+                        </div>
+                        <div class="carousel-item">
+                           <a href="" data-toggle="modal" data-target="#lightModal">
+                                <img src="img/okna1.jpg" alt="Second slide">
+                                <h5>Металлопластиковые окна и двери </h5> 
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                           <a href="" data-toggle="modal" data-target="#lightModal">
+                                <img src="img/okna1.jpg" alt="Third slide">
+                                <h5>Металлопластиковые окна и двери </h5> 
+                            </a> 
+                        </div>
+                        <div class="carousel-item">
+                           <a href="" data-toggle="modal" data-target="#lightModal">
+                                <img src="img/okna1.jpg" alt="Second slide">
+                                <h5>Металлопластиковые окна и двери </h5> 
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="" data-toggle="modal" data-target="#lightModal">
+                                <img src="img/okna1.jpg" alt="Third slide">
+                                <h5>Металлопластиковые окна и двери </h5> 
+                            </a> 
+                        </div>
+                        <div class="carousel-item">
+                            <a href="" data-toggle="modal" data-target="#lightModal">
+                                <img src="img/okna1.jpg" alt="Second slide">
+                                <h5>Металлопластиковые окна и двери </h5> 
+                            </a>
+                        </div>
+                    </div><!-- /.carousel-inner -->
+                        <a class="carousel-control-prev" href="#light1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#light1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                </div>
+
+<!-- modal окно товара -->
+                    <div class="modal fade" id="lightModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Товар</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="row description">
+                                <div class="col-12 col-lg-6 ">
+                                    <img src="img/okna1.jpg" alt="">
+                                    <h5>Металлопластиковые окна и двери </h5>
+                                </div>
+                                <div class="col-12 col-lg-6 ">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores deleniti dolorum provident omnis perspiciatis quasi quam illo, voluptatibus dolorem, autem sequi corrupti nobis consequuntur placeat voluptate fugit aperiam quo saepe.</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores deleniti dolorum provident omnis perspiciatis quasi quam illo, voluptatibus dolorem, autem sequi corrupti nobis consequuntur placeat voluptate fugit aperiam quo saepe.</p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="contact close1" data-dismiss="modal">закрыть</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+<!-- /modal окно товара -->   
             </div>
         </div>
 <!-- Job -->
@@ -342,16 +433,32 @@
         <span id="gallery"></span>
         <div class="examples"  style="position:relative;">
             <div class="row no-gutters">
-                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery1.jpg" alt=""></a></div>
-                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery2.jpg" alt=""></a></div>
-                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery3.jpg" alt=""></a></div>
-                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery4.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture">
+                    <a href="#lightbox1" data-toggle="modal" class="pic" id="one">
+                        <img class="gallery" src="img/gallery1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-lg-3 picture">
+                    <a href="#lightbox1" data-toggle="modal" class="pic" id="two">
+                        <img class="gallery" src="img/gallery2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-lg-3 picture">
+                    <a href="#lightbox1" data-toggle="modal" class="pic" id="three">
+                        <img class="gallery" src="img/gallery3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-lg-3 picture">
+                    <a href="#lightbox1" data-toggle="modal" class="pic" id="four">
+                        <img class="gallery" src="img/gallery4.jpg" alt="">
+                    </a>
+                </div>
             </div>
             <div class="row no-gutters">
-                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery5.jpg" alt=""></a></div>
-                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery6.jpg" alt=""></a></div>
-                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery7.jpg" alt=""></a></div>
-                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic"><img class="gallery" src="img/gallery9.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic" id="five"><img class="gallery" src="img/gallery5.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic" id="six"><img class="gallery" src="img/gallery6.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic" id="seven"><img class="gallery" src="img/gallery7.jpg" alt=""></a></div>
+                <div class="col-12 col-lg-3 picture"><a href="#lightbox1" data-toggle="modal" class="pic" id="eight"><img class="gallery" src="img/gallery9.jpg" alt=""></a></div>
             </div>
         </div>
     <!-- carousel -->    
@@ -361,28 +468,28 @@
                   <div class="modal-content">
                     <div class="modal-body">
                       <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item one">
                           <img src="img/gallery1.jpg" alt="First slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item two">
                           <img src="img/gallery2.jpg" alt="Second slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item three">
                           <img src="img/gallery3.jpg" alt="Third slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item four">
                           <img src="img/gallery4.jpg" alt="Third slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item five">
                           <img src="img/gallery5.jpg" alt="Third slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item six">
                           <img src="img/gallery6.jpg" alt="Third slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item seven">
                           <img src="img/gallery7.jpg" alt="Third slide">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item eight">
                           <img src="img/gallery9.jpg" alt="Third slide">
                         </div>
                       </div><!-- /.carousel-inner -->
@@ -448,13 +555,13 @@
             <div class="examples"  style="position:relative;">
                 <div class="row ">
                     <div class="col-12 col-lg-4 picture otz">
-                        <a href="#lightbox3" data-toggle="modal" ><img class="certificat" src="img/otz11.jpg" alt=""></a>
+                        <a href="#lightbox3" data-toggle="modal" id="otz1"><img class="certificat" src="img/otz11.jpg" alt=""></a>
                     </div>
                     <div class="col-12 col-lg-4 picture otz">
-                        <a href="#lightbox3" data-toggle="modal" ><img class="certificat" src="img/otz22.jpg" alt=""></a>
+                        <a href="#lightbox3" data-toggle="modal" id="otz2"><img class="certificat" src="img/otz22.jpg" alt=""></a>
                     </div>
                     <div class="col-12 col-lg-4 picture otz">
-                        <a href="#lightbox3" data-toggle="modal" ><img class="certificat" src="img/otz33.jpg" alt=""></a>
+                        <a href="#lightbox3" data-toggle="modal" id="otz3"><img class="certificat" src="img/otz33.jpg" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -466,13 +573,13 @@
                   <div class="modal-content">
                     <div class="modal-body">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item otz1">
                               <img src="img/otz1.jpg" alt="First slide">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item otz2">
                               <img src="img/otz2.jpg" alt="Second slide">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item otz3">
                               <img src="img/otz3.jpg" alt="Third slide">
                             </div>
                         </div><!-- /.carousel-inner -->
@@ -523,16 +630,24 @@
             <div class="examples"  style="position:relative;">
                 <div class="row ">
                     <div class="col-12 col-lg-3 picture cert">
-                        <a href="#lightbox2" data-toggle="modal" ><img class="certificat" src="img/cert11.jpg" alt=""></a>
+                        <a href="#lightbox2" data-toggle="modal" id="certificat1">
+                            <img class="certificat" src="img/cert11.jpg" alt="">
+                        </a>
                     </div>
                     <div class="col-12 col-lg-3 picture cert">
-                        <a href="#lightbox2" data-toggle="modal" ><img class="certificat" src="img/cert22.jpg" alt=""></a>
+                        <a href="#lightbox2" data-toggle="modal" id="certificat2">
+                            <img class="certificat" src="img/cert22.jpg" alt="">
+                        </a>
                     </div>
                     <div class="col-12 col-lg-3 picture cert">
-                        <a href="#lightbox2" data-toggle="modal" ><img class="certificat" src="img/cert33.jpg" alt=""></a>
+                        <a href="#lightbox2" data-toggle="modal" id="certificat3">
+                            <img class="certificat" src="img/cert33.jpg" alt="">
+                        </a>
                     </div>
                     <div class="col-12 col-lg-3 picture cert">
-                        <a href="#lightbox2" data-toggle="modal" ><img class="certificat" src="img/cert444.jpg" alt=""></a>
+                        <a href="#lightbox2" data-toggle="modal" id="certificat4">
+                            <img class="certificat" src="img/cert444.jpg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -544,16 +659,16 @@
                   <div class="modal-content">
                     <div class="modal-body">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
+                            <div class="carousel-item certificat1">
                               <img src="img/cert11.jpg" alt="First slide">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item certificat2">
                               <img src="img/cert22.jpg" alt="Second slide">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item certificat3">
                               <img src="img/cert33.jpg" alt="Third slide">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item certificat4">
                               <img src="img/cert444.jpg" alt="Third slide">
                             </div>
                         </div><!-- /.carousel-inner -->
