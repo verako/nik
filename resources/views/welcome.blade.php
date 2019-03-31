@@ -99,21 +99,30 @@
                             </button>
                           </div>
                           <div class="modal-body">
-                            <form>
+                            <form action="send-mail" method="post">
+                                {{ csrf_field() }}
+                                <div id="sendmessage">
+                                    Ваше сообщение отправлено!
+                                </div>
+                                <div id="senderror">
+                                    При отправке сообщения произошла ошибка. Продублируйте его, пожалуйста, на почту администратора <span>{{ env('MAIL_ADMIN_EMAIL') }}</span>
+                                </div>
                               <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Как к Вам обратиться?:</label>
-                                <input type="text" class="form-control" id="recipient-name">
+                                <input type="text" class="form-control" id="recipient-name" name="name" required>
                               </div>
                               <div class="form-group">
                                 <label for="message-text" class="col-form-label">Телефон:</label>
-                                <input type="number" class="form-control" id="recipient-tel">
+                                <input type="number" class="form-control" id="recipient-tel" name="tel" required>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="contact close1" data-dismiss="modal">закрыть</button>
+                                <button type="submit" class="contact send1">отправить</button>
+                                <span class="pull-right margintop20">* Заполните, пожалуйста, все обязательные поля!</span>
                               </div>
                             </form>
                           </div>
-                          <div class="modal-footer">
-                            <button type="button" class="contact close1" data-dismiss="modal">закрыть</button>
-                            <button type="button" class="contact send1">отправить</button>
-                          </div>
+                         
                         </div>
                       </div>
                     </div>

@@ -566,3 +566,12 @@ button a:hover{
     margin: 1.75rem auto;
 	}
 }
+#sendmessage{
+	display: none;
+}
+#senderror{
+	display: none;
+}
+.pull-right{
+	display: none;
+}
