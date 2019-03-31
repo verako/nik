@@ -143,10 +143,13 @@ span.border-3{
 	top: 30%;
 }
 .prev {
-	left: -8%;
+	width: 5%;
+	left: -3%;
 }
 .next{
-	right: -8%;
+	width: 5%;
+
+	right: -3%;
 }
 
 /*@media (max-width: 576px){

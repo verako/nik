@@ -13,11 +13,10 @@ class MailSetting extends Controller
     	$tel=$request->tel;
 
     	Mail::to('vera.kopylchuk@gmail.com')->send(new MailClass($name, $tel));
-    	//return redirect()->back()->with('status', 'Ваше сообщение успешно отправлено.');
-  //   	return redirect('articles')->with([
-		//     'flash_message' => 'Your article has been created',
-		//     'flash_message_important' => true
-		// ]);
+    	
+		flash()->overlay('Спасибо! Мы перезвоним!',' ');
+
+		return redirect()->back();
     }
      
 }

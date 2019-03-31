@@ -1,8 +1,8 @@
 $(document).ready(function(){
 		$('.picture').on('click', 'a', function(){
-			$(".carousel-inner").children("div").removeClass('active');
+			$(".modal2").children(".picture").removeClass('active');
 			var id=this.id; console.log(id);
-			$('.carousel-inner > div').each(function(){
+			$('.modal2 > div').each(function(){
 
         		var clas=$(this).attr('class').split(/\s+/);
         		
@@ -11,11 +11,11 @@ $(document).ready(function(){
 				console.log(item);
 				
 			    if (item === id) {
-					if($(".carousel-inner").children("div."+id).hasClass('active')){
-							$(".carousel-inner").children("div."+id).removeClass('active');return;
+					if($(".modal2").children("div."+id).hasClass('active')){
+							$(".modal2").children("div."+id).removeClass('active');return;
 						}
-					$(".carousel-inner").children("div."+id).removeClass('active');
-					$(".carousel-inner").children("div."+id).addClass('active');
+					$(".modal2").children("div."+id).removeClass('active');
+					$(".modal2").children("div."+id).addClass('active');
 					
 			    }
 			});

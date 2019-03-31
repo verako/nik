@@ -15,10 +15,11 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script> 
+        <!-- <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>  -->
         <script src="js/script_hide.js" type="text/javascript"></script>
         <script src="js/script_active.js" type="text/javascript"></script>
         <script src="js/script.js" type="text/javascript"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-expand-md bg-dark navbar-dark" id="header">
@@ -51,6 +52,7 @@
                 <i class="fas fa-envelope"></i> nikszakaz@gmail.com</div>
             </div>  
         </nav>
+            @include('flash::message')
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -476,7 +478,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
-                      <div class="carousel-inner">
+                      <div class="carousel-inner modal2">
                         <div class="carousel-item one">
                           <img src="img/gallery1.jpg" alt="First slide">
                         </div>
@@ -581,7 +583,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner modal2">
                             <div class="carousel-item otz1">
                               <img src="img/otz1.jpg" alt="First slide">
                             </div>
@@ -667,7 +669,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner modal2">
                             <div class="carousel-item certificat1">
                               <img src="img/cert11.jpg" alt="First slide">
                             </div>
@@ -737,5 +739,11 @@
         </div>    
            
         <!-- </div> --> <!-- container -->
+
+        <script>
+           $(document).ready(function() {
+                $('#flash-overlay-modal').modal();
+            });
+        </script>
     </body>
 </html>
